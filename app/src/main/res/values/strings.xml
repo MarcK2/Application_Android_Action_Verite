@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Projet_Kadangha- Action Verite</string>
+    <string-array name="genre">
+        <item>Amour</item>
+        <item>Etudes</item>
+        <item>Libre</item>
+        <item>Vie privée</item>
+        <item>Science</item>
+        <item>Sport</item>
+    </string-array>
+    <string-array name="categorie_age">
+        <item>Tout age</item>
+        <item>+10 ans</item>
+        <item>+15 ans</item>
+        <item>+20 ans</item>
+    </string-array>
+    <string name="tuto">Sur la page d\'acceuil vous avez la possibilité de créer une nouvelle partie de contnuer une que vous avez créer.
+        \n Vous pouvez desactiver la musique de fond et régler quelque paramètres.Avec le menu en haut à droit de l\'application disponible dans toute l\'application , vous pouvez gérer (afficher , ajouter supprimer ) des actions , vértiés , joueurs</string>
+
+    <string name="rgpd_intro">Nous sommes heureux de vous accueillir dans notre application.\n Afin de protéger vos données personnelles, nous vous demandons de lire et d\'accepter les termes et conditions du Règlement Général sur la Protection des Données (RGPD) avant de continuer: \n
+        - Nous collectons votre géolocalisation quand vous utilisez l\'application à des fins statistiques. \n
+        -Les noms  saisis dans l\'applications ne seront utilisés que pour le bon fonctionnement de l\'application. \n
+        -Les ages et les thèmes saisis dans l\'application nous serviront à des fins statistiques afin d\'améliorer notre application.</string>
+    <string name="accept_terms">J\'ai lu et j\'accepte les termes et conditions.</string>
+</resources>

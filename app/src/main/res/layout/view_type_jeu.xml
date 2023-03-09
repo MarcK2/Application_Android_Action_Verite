@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_choix_type"
+        android:layout_width="323dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Choisissez le type de questions que vous voulez "
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_genre"
+        android:layout_width="165dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="116dp"
+        android:contentDescription="..."
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/rg_type"
+        app:layout_constraintTop_toBottomOf="@+id/tv_choix_type" />
+
+    <Spinner
+        android:id="@+id/spinner_age"
+        android:layout_width="164dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="..."
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/rg_type"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_genre" />
+
+    <RadioGroup
+        android:id="@+id/rg_type"
+        android:layout_width="176dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_choix_type">
+
+        <RadioButton
+            android:id="@+id/rb_random"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:text="Questions aléatoires" />
+
+        <RadioButton
+            android:id="@+id/rb_genre"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:text="Questions par genre" />
+
+        <RadioButton
+            android:id="@+id/rb_cat_age"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:minHeight="48dp"
+            android:text="Questions par age"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_type_valider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="107dp"
+        android:text="Valider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_age" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
